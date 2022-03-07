@@ -1,0 +1,625 @@
+* 
+{
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  color: #FDF5E6; /*Old Lace*/
+  background-color: #FDF5E6; /*St. Patrick's Blue*/
+  font-family: 'Oxygen', sans-serif;
+}
+hr#body {
+  background-color: #191970;
+}
+
+/** HEADER **/
+#header-nav {
+  background-color: #FDF5E6; /*Ghostwhite*/
+  border-radius:0;
+  border: 0;
+}
+
+/*Image Logo*/
+#logo-img {
+  background: url('../images/download.png') no-repeat;
+  width: 150px;
+  height: 150px;
+  margin: 0px 15px 0px 0px;
+}
+
+/*Brand name*/
+
+.navbar-brand {
+  padding-top: 25px;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+.navbar-brand h1 { /* Restaurant name */
+  font-family: 'Lora', serif;
+  color: #191970; /*Light Sky Blue*/
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #090903; /*Color: Black Ink*/
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+  transition: all 0.5s ease;
+}
+
+
+/*Brand Slogan*/
+
+.navbar-brand p { /* Chillin AF */
+  color: #191970; /*Light Sky Blue*/
+  text-transform: uppercase;
+  font-size: .8em;
+  margin-top: 15px;
+  font-family: Optima;
+  font-weight: bold;
+  transition: all 0.5s ease;
+}
+.navbar-brand p span { /* Ice Logo - Slogan Logo basically*/
+  vertical-align: middle;
+}
+
+
+/*Menu Buttons*/
+#nav-list a.active {
+  background: #191970; /*Old Lace*/
+  color: #FDF5E6;
+}
+#nav-list {
+  margin-top: 5px;
+}
+#nav-list a {
+  color: #191970; /*St. Patrick's Blue*/
+  text-align: center;
+}
+#nav-list a:hover {
+  background: #191970; /*Old Lace*/
+  color: #FDF5E6;
+  transition: all 0.5s ease;
+}
+#nav-list a span {
+  font-size: 1.6em;
+}
+
+#phone {
+  margin-top: 5px;
+}
+#phone a { /* Phone number */
+  text-align: right;
+  padding-bottom: 0;
+}
+#phone div { /* Zero Contact Delivery*/
+  color: royalblue;
+  text-align: right;
+  padding-right: 16px;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #191970; /*St. Patrick's Blue*/
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+
+i {
+  font-size: 1.8em;
+}
+/*END HEADER*/
+
+/* FOOTER */
+.panel-footer {
+  margin-top: 30px;
+  padding-top: 35px;
+  padding-bottom: 15px;
+  background-color: #090903;
+  border-top: 0;
+}
+.panel-footer div.row {
+  margin-bottom: 5px;
+}
+#hours, #address {
+  line-height: 1.5;
+}
+#hours, #address, #testimonials{
+ color: #FDF5E6;
+}
+#hours > span, #address > span {
+  font-size: 1.2em;
+}
+#address p {
+  color: #557c3e;
+  font-size: .7em;
+  line-height: 1.8;
+}
+span#name{
+  font-style: normal;
+}
+#testimonials {
+  font-style: italic;
+}
+#testimonials p:nth-child(2) {
+  margin-top: 25px;
+}
+/* END FOOTER */
+
+
+/*HOME PAGE*/
+
+.container .jumbotron {
+  box-shadow: 0 0 50px #615AA3;
+  border: 2px solid #615AA3;
+}
+
+.row {
+  width: 100%;
+}
+
+#menu-tile, #specials-tile, #map-tile {
+  height: 250px;
+  width: 100%;
+  margin: 15px 15px;
+  position: relative;
+  border: 2px solid #FDF5E6;
+  overflow: hidden;
+  transition: transform .3s;
+}
+#map-tile:hover {
+  box-shadow: 0 0 50px #615AA3;
+  border: 2px solid #0080FF;
+}
+#menu-tile:hover, #specials-tile:hover {
+  border: 2px solid #0080FF;
+  box-shadow: 0 0 50px #615AA3;
+  transform: scale(1.05);
+}
+
+#menu-tile {
+  background: url('../images/menu-tile-alt.jpg') no-repeat;
+  background-position: center;
+}
+#specials-tile {
+  background: url('../images/specials-tile-alt.jpg') no-repeat;
+  background-position: center;
+}
+
+#menu-tile span, #specials-tile span, #map-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.6em;
+  font-family: Optima;
+  text-transform: uppercase;
+  background-color: #828382;
+  color: #FDF5E6;
+  font-weight: 900;
+  opacity: .8;
+}
+
+/*END HOME PAGE*/
+
+/* MENU CATEGORIES PAGE */
+h2 {
+ color: #191970;
+ margin: 30px 30px 5px;
+}
+#sub-title {
+  color: #191970;
+  margin-right: 30px;
+}
+span#notice {
+  text-align: center;
+  font-weight: 900;
+}
+
+.category-tile { 
+  position: relative;
+  border: 2px solid #FDF5E6;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 15px;
+  transition: transform .3s;
+}
+.category-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  font-family: Optima;
+  text-transform: uppercase;
+  background-color: #828382;
+  color: #FDF5E6;
+  font-weight: 900;
+  opacity: .8;
+}
+.category-tile:hover {
+  border: 2px solid #0080FF;
+  box-shadow: 0 0 50px #615AA3;
+  transform: scale(1.05);
+}
+
+#menu-categories-title + div {
+  margin-bottom: 50px;
+}
+/* END MENU CATEGORIES PAGE */
+
+/* SINGLE CATEGORY PAGE */
+div#notice {
+  color:  #191970;
+  margin: 5px 5px 30px 5px;
+}
+.menu-item-tile {
+  margin-bottom: 25px;
+}
+.menu-item-tile hr {
+  width: 80%;
+}
+.menu-item-tile .menu-item-price {
+  font-size: 1.1em;
+  text-align: right;
+  margin-top: -15px;
+  margin-right: -15px;
+  color: #191970;
+}
+.menu-item-tile .menu-item-price span {
+  font-size: .6em;
+}
+.menu-item-photo {
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  margin-right: -15px;
+  margin-left: auto;
+  margin-bottom: 20px;
+  max-width: 250px;
+  box-shadow: 0 0 25px #615AA3;
+  border: 2px solid  #191970;
+}
+.menu-item-photo div {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 80px;
+  background-color: #AFC2F9;
+  text-align: center;
+}
+.menu-item-description {
+  padding-right: 30px;
+}
+h3.menu-item-title {
+  margin: 0 0 10px;
+  color: #191970;
+}
+.menu-item-details {
+  color: #191970;
+  font-size: .9em;
+  font-style: italic;
+}
+/* END SINGLE CATEGORY PAGE */
+
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  /*HEADER*/
+  .nav-container {
+    width: 100%
+  }
+  .menu-container {
+    width: 100%;
+    /*margin-left: 15px;*/
+  }
+  .single-menu-container{
+    width: 100%;
+  }
+
+  /*END HEADER*/
+
+  /*Footer*/
+  .panel-footer div.row {
+    margin-bottom: 5px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  /*End Footer*/
+
+  /*HOME PAGE*/
+  .container .jumbotron {
+      background: url('../images/hyouka-lg.jpg') no-repeat;
+      height: 675px;
+    }
+  /*END HOME PAGE*/
+
+  /*MENU CATEGORY*/
+  .single-menu-container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  /*END MENU CATEGORY*/
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Header */
+  #logo-img {
+    background: url('../images/logo-md.png') no-repeat;
+    width: 100px;
+    height: 100px;
+    margin: 0px 5px 0px 0;
+  }
+  .nav-container {
+    width: 100%;
+  }
+  .menu-container {
+    padding-left: 30px;
+    padding-right: 5px;
+  }
+  .single-menu-container{
+    padding-left: 30px;
+  }
+  /* End Header */
+
+  /*Footer*/
+  .panel-footer div.row {
+    margin-bottom: 5px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  /*End Footer*/
+
+
+  /*Home Page*/
+  .container .jumbotron {
+      background: url('../images/hyouka-md.jpg') no-repeat;
+      height: 558px;
+    }
+  /*End Home Page*/
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  /*Brand name*/
+  .navbar-brand h1 { /* Restaurant name */
+    font-size: 1.2em;
+    margin-top: -5px;
+  }
+  /*Brand Slogan*/
+
+  .navbar-brand p { /* Chillin AF */
+    font-size: .8em;
+    margin-top: 5px;
+  }
+  /*Telphone number*/
+  #nav-list a span {
+  font-size: 1.2em;
+  }
+  #phone div { /* Zero Contact Delivery*/
+    font-size: 12px;
+  }
+  i {
+    font-size: 1.2em;
+  }
+  .nav-container {
+    width: 98%;
+  }
+  .menu-container {
+    margin-left: 30px;
+  }
+
+   /* Home Page */
+  .container .jumbotron {
+    background: url('../images/hyouka-sm.jpg') no-repeat;
+    height: 432px;
+  }
+
+
+  /* End Home Page */
+
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+  .navbar-brand p { /* Chillin AF */
+    font-size: .6em;
+    margin-top: 12px;
+  }
+  .navbar-brand p img { /* Ice logo*/
+    height: 20px;
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #collapsable-nav a i { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+
+  #call-btn > a {
+    font-size: 1.5em;
+    display: block;
+    margin: 0 20px;
+    padding: 10px;
+    border: 2px solid #fff;
+    background-color: #191970; /*Old Lace*/
+    color:  #FDF5E6; /*St. Patrick's Blue*/
+  }
+  #xs-deliver {
+    margin-top: 5px;
+    font-size: .7em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    font-family: 'Lora', serif;
+    color: #191970;
+  }
+
+  i {
+    font-size: .7em;
+    text-align: center;
+  }
+  /* End Header */
+
+  .menu-container{
+    margin-left: 30px;
+  }
+  .single-menu-container{
+    margin-left: 15px;
+    /*margin-right: auto;*/
+  }
+
+  /* Footer */
+  .panel-footer section {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .panel-footer section:nth-child(3) {
+    margin-bottom: 0; /* margin already exists on the whole row */
+  }
+  .panel-footer section hr {
+    width: 50%;
+    color: darkred;
+  }
+  #hours, #address, #testimonials{
+    width: 100%;
+    margin-left: 15px;
+    margin-right: 15px;
+  }  
+  /* End Footer */
+
+
+  /* Home Page */
+  .container .jumbotron {
+    margin-top: 30px;
+    padding: 0;
+  }
+
+
+  #menu-tile, #specials-tile {
+    width: 100%;
+    margin: 15px 15px 10px 15px;
+  }
+  /*End Home Page*/
+  div.menu-item-tile{
+    margin-left: 20px;
+  }
+   .menu-item-photo {
+    margin-right: auto;
+  }
+  .menu-item-tile .menu-item-price {
+    text-align: center;
+  }
+  .menu-item-description {
+    text-align: center;
+    padding-right: 0;
+  }
+  p.menu-item-details{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+
+
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
+  /* Header */
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 5px;
+    font-size: 6vw;
+  }
+  /* End Header */
+
+
+  /* Footer */
+  .panel-footer section {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .panel-footer section:nth-child(3) {
+    margin-bottom: 0; /* margin already exists on the whole row */
+  }
+  .panel-footer section hr {
+    width: 50%;
+    color: darkred;
+  }
+  #hours, #address, #testimonials{
+    width: 100%;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  /* End Footer */
+
+
+
+  /* Home page */
+
+  #menu-tile {
+  background: url('../images/menu-tile.jpg') no-repeat;
+  background-position: center;
+  }
+  #specials-tile {
+  background: url('../images/specials-tile.jpg') no-repeat;
+  background-position: center;
+  }
+
+  #menu-tile, #specials-tile{
+    width: 100%;
+    margin: 15px 15px 10px 15px;
+  }
+
+  .col-xxs-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 100%;
+  }
+
+  .menu-container{
+    margin-left: 0;
+    margin-right: 0;
+  }
+  h2 {
+    font-size: 1.8em;
+  }
+  #sub-title {
+    font-size: .8em;
+    margin-left: 30px;
+  }
+
+  .single-menu-container{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  div#notice {
+    padding-bottom: 15px;
+  }
+  section.row{
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+}
